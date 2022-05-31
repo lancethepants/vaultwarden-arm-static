@@ -68,7 +68,7 @@ fi
 	CFLAGS_armv7_unknown_linux_musleabi="-march=armv7-a -mtune=cortex-a9" \
 	CXXFLAGS_armv7_unknown_linux_musleabi="-march=armv7-a -mtune=cortex-a9" \
 	CARGO_TARGET_ARMV7_UNKNOWN_LINUX_MUSLEABI_LINKER=/opt/tomatoware/arm-soft-musl/bin/arm-linux-gcc \
-	CARGO_TARGET_ARMV7_UNKNOWN_LINUX_MUSLEABI_RUSTFLAGS='-Clink-arg=-s -Ctarget-feature=+crt-static' \
+	CARGO_TARGET_ARMV7_UNKNOWN_LINUX_MUSLEABI_RUSTFLAGS='-Cstrip=symbols -Ctarget-feature=+crt-static' \
 	OPENSSL_DIR=$DEST \
 	OPENSSL_STATIC=1 \
 	cargo \
