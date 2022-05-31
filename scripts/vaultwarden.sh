@@ -60,7 +60,7 @@ if [ ! -f .cloned ]; then
 	touch .cloned
 fi
 	cd vaultwarden
-	git checkout 1.24.0
+	git checkout 1.25.0
 
 	CC_armv7_unknown_linux_musleabi=/opt/tomatoware/arm-soft-musl/bin/arm-linux-gcc \
 	CXX_armv7_unknown_linux_musleabi=/opt/tomatoware/arm-soft-musl/bin/arm-linux-g++ \
